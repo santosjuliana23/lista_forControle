@@ -7,9 +7,17 @@
     */
 
     //ENTRADA
+   let numeros = [];
 
 
     //PROCESSAMENTO
+    for(let i = 1; i <= 5; i++) {
+        const numero = Number(prompt(`informe o número ${i}`));
+        
+        numeros.push(numero)
+    }
+    document.write(
+        Math.max(...numeros))
 
 
     //SAÍDA

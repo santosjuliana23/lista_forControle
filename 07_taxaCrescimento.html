@@ -11,7 +11,7 @@
     for(i = 0; populacao <= 200000; i++) {
         populacao = populacao*1.03;
         if(populacao >= 200000){
-            document.write(`demorou ${i} anos para a população chegar a ${populacao} pessoas.`)
+            document.write(`demorou ${i} anos para a população chegar a ${Math.round(populacao)} pessoas.`)
         }
     }
     

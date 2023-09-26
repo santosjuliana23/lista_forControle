@@ -6,11 +6,19 @@
     */
 
     //ENTRADA
+    let populaçao = 50000;
 
-    
     //PROCESSAMENTO
+    for(i=1;i<=10; i++){
+        populaçao = populaçao * 1.015
+        if( i == 5) {
+            document.write(`população em cinco anos = ${Math.round(populaçao)}`)
+        }
+        else if( i == 10) {
+            document.write(`população em dez anos = ${Math.round(populaçao)}`)
+        }
+    }
     
-
     //SAÍDA
 
 </script>

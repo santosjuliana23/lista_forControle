@@ -6,9 +6,15 @@
     */
 
     //ENTRADA
-
-    
+    let populacao = 80000;
     //PROCESSAMENTO
+    for(i = 0; populacao <= 200000; i++) {
+        populacao = populacao*1.03;
+        if(populacao >= 200000){
+            document.write(`demorou ${i} anos para a população chegar a ${populacao} pessoas.`)
+        }
+    }
+    
 
     
     //SAÍDA

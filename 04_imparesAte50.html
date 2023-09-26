@@ -6,10 +6,16 @@
     */
 
     //ENTRADA
-    let numerosimpares 
+    let impares = [];
+    
 
     //PROCESSAMENTO
-    
+    for(let i = 1; i <= 50; i++) {
+        if(i%2 == 1){
+            impares.push(i)
+        }
+    }
+    document.write(impares.join(", "));
 
 
     //SAÍDA

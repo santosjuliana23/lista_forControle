@@ -9,14 +9,36 @@
 
     //ENTRADA
     let votos = Number(prompt(`informe a quantidade de alunos votantes.`));
-   
+    let candidatos = [];
+    let candidato1 = 0;
+    let candidato2 = 0;
+    let candidato3 = 0;
+
     //PROCESSAMENTO
     for(i = 1; i <= 3; i++){
-        const candidato = prompt(`informe o nome do ${i} candidato.`)
+       let candidato = prompt(`informe o nome do candidato.`)
+       candidatos.push(candidato)
     }
     for( i = 1; i <= votos; i++){
+        const v = prompt(`informe em quem você votou. (candidato numero 1 :${candidatos[0]} candidato numero 2 :${candidatos[1]} candidato numero 3 :${candidatos[2]}`);
         
+        if(v == candidatos[0] ){
+             candidato1++
+        }
+        else if(v == candidatos[1]){
+            candidato2++
+        }
+        else if(v == candidatos[2]){
+            candidato3++
+        }
+
     }
+    if(candidato1 > candidato2 && candidato1 >= candidato3) {document.write(`O Vencedor é ${candidatos[0]} <br>`)}
+    else if(candidato2 > candidato3 && candidato2 >= candidato1) {document.write(`O Vencedor é ${candidatos[1]}<br>`)}
+    else if(candidato3 > candidato2 && candidato3 >= candidato1) {document.write(`O Vencedor é ${candidatos[2]}<br>`)}
+    
+    document.write(`candidato 1 = ${candidato1} <br> candidato 2 = ${candidato2} <br> candidato 3 = ${candidato3} <br>
+    porcentagem de votos do candidato 1 = ${(candidato1 / votos * 100).toFixed(2)} <br> porcentagem de votos do candidato 2 = ${(candidato2 / votos * 100).toFixed(2)} <br> porcentagem de votos do candidato 3 = ${(candidato3 / votos * 100).toFixed(2)}`)
    
     
 

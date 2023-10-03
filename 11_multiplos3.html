@@ -5,10 +5,20 @@
     */
 
     //ENTRADA
+    let m3 = [];
 
 
     //PROCESSAMENTO
-
+    for( i = 100; i >= 3; i--){
+        if(i/3 == Math.round(i/3)){
+            m3.push(i)
+        }
+    }
+    let soma = 0
+    for ( i = m3.length-1; i>= 0; i--){
+        soma += m3[i]
+    }
+    document.write(` múltiplos de 3 = ${m3.join(", ")} <br> a soma dos numeros = ${soma}`)
 
     //SAÍDA
 

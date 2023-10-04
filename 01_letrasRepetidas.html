@@ -10,10 +10,16 @@
     */
 
     //ENTRADA
-     let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let repetidas  = []
+    for (i = 0; i < listaDeLetras.length; i++){
+        let letra = listaDeLetras[i].toLowerCase();
+        if(repetidas.includes(letra) == false){
+            repetidas.push(letra)
+        }
+    }
+    document.write(repetidas.sort().join(", "));
 
-    //PROCESSAMENTO
-    
 
     
     //SAÍDA
